@@ -12,13 +12,21 @@ function myFunction() {
 
   function FadeOut() {
     const tapa = document.getElementById('tapa1');
-    
+
     tapa.style.opacity = '0';
  }
 
 
- // REVELADO 3
+ // BARRA DE PROGRESO DE LECTURA
 
- function Fade() {
-    document.getElementById("revelado").classList = 'animate';
- }
+window.onscroll = function() {progressbar()};
+
+function progressbar() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+  document.getElementById("myBar2").style.width = scrolled + "%";
+}
+
+// BARRA DE PROGRESO DE LECTURA ABAJO

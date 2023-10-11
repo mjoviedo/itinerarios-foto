@@ -46,7 +46,44 @@ a:hover {color: lightblue; opacity: 100%;}
  }
 
 
+/* BARRA DE PROGRESO DE LECTURA */
 
+.header {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+
+  
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background: orange;
+    width: 0%;
+  }
+  .progress-container2 {
+    width: 100%;
+    height: 1em;
+    background: #ccc;
+  }
+  .progress-bar2 {
+    height: 1em;
+    background: green;
+    width: 0%;
+  }
+  
+  .content {
+    padding: 100px 0;
+    margin: 50px auto 0 auto;
+    width: 80%;
+  }
 
 
 
