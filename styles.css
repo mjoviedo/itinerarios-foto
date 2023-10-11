@@ -2,7 +2,60 @@
 a {color: white; opacity: 70%;}
 a:hover {color: lightblue; opacity: 100%;}
 
-.layer1 {
+
+
+
+
+/* REVELADO 1 */
+
+ .botontransparente {
+    background-color: transparent;
+    border-width: 0px;
+    width: 100%;
+    height: 100%;
+ }
+
+ .foto-fondo {
+    background-image: url(img/foco0.jpg);
+    background-size: cover;
+ }
+
+ .mystyle {
+    background-image: url(img/recorte-filtro.jpg);
+    background-size: cover;
+    mix-blend-mode: darken;
+    z-index: 1;
+  }
+
+
+/* REVELADO 2 */
+
+
+ .tapa {
+    background-image: url(img/recorte-filtro.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: opacity 2s;
+    z-index: 1;
+ }
+
+ .fondo {
+    background-image: url(img/foco0.jpg);
+    background-size: cover;
+    background-position: center;
+ }
+
+
+
+
+
+
+
+
+
+/* PRUEBA PARA FONDO TEXTURADO */
+
+ .layer1 {
     background: hsl(40, 35%, 76%);
 }
 
