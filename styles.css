@@ -107,3 +107,54 @@ a:hover {color: lightblue; opacity: 100%;}
     	);
     mix-blend-mode: overlay;
 }
+
+
+
+/* EFECTO DE ALBUM DE FOTOS */
+
+.esquinas {
+  position: relative;  
+  display: table;
+  max-width: 90%;
+  margin: 50px auto;
+}
+.esquinas img {
+  display: table-cell;
+  max-width:100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 8px;
+  background: #fff;
+  box-shadow: 0 0 0.2em #666;
+  box-sizing: border-box;
+}
+.esquinas:before,
+.esquinas:after,
+.esquinasbis:before,
+.esquinasbis:after {
+  position: absolute;
+  bottom: -20px;
+  right: -40px;
+  content: "";
+  height: 40px;
+  width: 80px;
+  background: #fff; /* Same color that wrapper background */
+  box-shadow: 0 -6px 9px -8px #333;
+  transform: rotate(-45deg);
+}
+.esquinas:after,
+.esquinasbis:after {
+  top: -20px;
+  left: -40px;
+  box-shadow: 0 6px 9px -8px #333;
+}
+.esquinasbis:before { 
+  top: auto;
+  left: -40px;
+  transform: rotate(45deg);
+}
+.esquinasbis:after {
+  left: auto;
+  right: -40px;
+  transform: rotate(45deg);
+}
