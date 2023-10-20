@@ -26,7 +26,7 @@ function progressbar() {
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
-  document.getElementById("myBar2").style.width = scrolled + "%";
 }
 
-// BARRA DE PROGRESO DE LECTURA ABAJO
+// BARRA DE PROGRESO EN MODAL
+

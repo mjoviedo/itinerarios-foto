@@ -1,12 +1,107 @@
+/* FUENTES */
+
+@font-face {
+	font-family:"alegre";
+	font-style:normal;
+	font-weight:400;
+	src: url("fonts/Alegreya-Regular.ttf");
+}
+
+@font-face {
+	font-family:"alegre-medium";
+	font-style:normal;
+	font-weight:500;
+	src: url("fonts/Alegreya-Medium.ttf");
+}
+
+@font-face {
+	font-family:"alegre-semibold";
+	font-style:normal;
+	font-weight:600;
+	src: url("fonts/Alegreya-SemiBold.ttf");
+}
+
+@font-face {
+	font-family:"alegre-bold";
+	font-style:normal;
+	font-weight:bold;
+	src: url("fonts/Alegreya-Bold.ttf");
+}
+
+@font-face {
+	font-family:"alegre-extrabold";
+	font-style:normal;
+	font-weight:800;
+	src: url("fonts/Alegreya-ExtraBold.ttf");
+}
+
+@font-face {
+	font-family:"alegre-black";
+	font-style:normal;
+	font-weight:bolder;
+	src: url("fonts/Alegreya-Black.ttf");
+}
+
+
+@font-face {
+	font-family:"alegre-regular-italic";
+	font-style:italic;
+	font-weight:400;
+	src: url("fonts/Alegreya-Italic.ttf");
+}
+
+@font-face {
+	font-family:"alegre-medium-italic";
+	font-style:italic;
+	font-weight:500;
+	src: url("fonts/Alegreya-MediumItalic.ttf");
+}
+
+@font-face {
+	font-family:"alegre-semibold-italic";
+	font-style:italic;
+	font-weight:600;
+	src: url("fonts/Alegreya-SemiBoldItalic.ttf");
+}
+
+@font-face {
+	font-family:"alegre-bold-italic";
+	font-style:italic;
+	font-weight:bold;
+	src: url("fonts/Alegreya-BoldItalic.ttf");
+}
+
+@font-face {
+	font-family:"alegre-extrabold-italic";
+	font-style:italic;
+	font-weight:800;
+	src: url("fonts/Alegreya-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+	font-family:"alegre-black-italic";
+	font-style:italic;
+	font-weight:bolder;
+	src: url("fonts/Alegreya-BlackItalic.ttf");
+}
+
+
+/* 
 .pixel {font-family: 'Pixelify Sans', cursive;}
 a {color: white; opacity: 70%;}
 a:hover {color: lightblue; opacity: 100%;}
+ */
+
+.titulo {font-family: "alegre-medium-italic"; font-size: 3em;}
+
+body {font-family: "alegre";}
 
 
+.naranja {color: #B83F19;}
+.boton-naranja {background-color: #B83F19; color:white;}
+.boton-naranja:hover {background-color: #de7e30; color:white;}
 
-
-
-/* REVELADO 1 */
+/* REVELADO 1
 
  .botontransparente {
     background-color: transparent;
@@ -65,20 +160,10 @@ a:hover {color: lightblue; opacity: 100%;}
   
   .progress-bar {
     height: 8px;
-    background: rgb(199, 93, 6);
+    background: #B83F19;
     width: 0%;
   }
-  .progress-container2 {
-    width: 100%;
-    height: 1em;
-    background: #ccc;
-  }
-  .progress-bar2 {
-    height: 1em;
-    background: rgb(199, 93, 6);
-    width: 0%;
-  }
-  
+
   .content {
     padding: 100px 0;
     margin: 50px auto 0 auto;
@@ -158,3 +243,7 @@ a:hover {color: lightblue; opacity: 100%;}
   right: -40px;
   transform: rotate(45deg);
 }
+
+
+/* MODAL */
+
