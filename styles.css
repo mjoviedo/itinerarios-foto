@@ -4,42 +4,42 @@
 	font-family:"alegre";
 	font-style:normal;
 	font-weight:400;
-	src: url("fonts/Alegreya-Regular.ttf");
+	src: url("/fonts/Alegreya-Regular.ttf");
 }
 
 @font-face {
 	font-family:"alegre-medium";
 	font-style:normal;
 	font-weight:500;
-	src: url("fonts/Alegreya-Medium.ttf");
+	src: url("/fonts/Alegreya-Medium.ttf");
 }
 
 @font-face {
 	font-family:"alegre-semibold";
 	font-style:normal;
 	font-weight:600;
-	src: url("fonts/Alegreya-SemiBold.ttf");
+	src: url("/fonts/Alegreya-SemiBold.ttf");
 }
 
 @font-face {
 	font-family:"alegre-bold";
 	font-style:normal;
 	font-weight:bold;
-	src: url("fonts/Alegreya-Bold.ttf");
+	src: url("/fonts/Alegreya-Bold.ttf");
 }
 
 @font-face {
 	font-family:"alegre-extrabold";
 	font-style:normal;
 	font-weight:800;
-	src: url("fonts/Alegreya-ExtraBold.ttf");
+	src: url("/fonts/Alegreya-ExtraBold.ttf");
 }
 
 @font-face {
 	font-family:"alegre-black";
 	font-style:normal;
 	font-weight:bolder;
-	src: url("fonts/Alegreya-Black.ttf");
+	src: url("/fonts/Alegreya-Black.ttf");
 }
 
 
@@ -47,42 +47,42 @@
 	font-family:"alegre-regular-italic";
 	font-style:italic;
 	font-weight:400;
-	src: url("fonts/Alegreya-Italic.ttf");
+	src: url("/fonts/Alegreya-Italic.ttf");
 }
 
 @font-face {
 	font-family:"alegre-medium-italic";
 	font-style:italic;
 	font-weight:500;
-	src: url("fonts/Alegreya-MediumItalic.ttf");
+	src: url("/fonts/Alegreya-MediumItalic.ttf");
 }
 
 @font-face {
 	font-family:"alegre-semibold-italic";
 	font-style:italic;
 	font-weight:600;
-	src: url("fonts/Alegreya-SemiBoldItalic.ttf");
+	src: url("/fonts/Alegreya-SemiBoldItalic.ttf");
 }
 
 @font-face {
 	font-family:"alegre-bold-italic";
 	font-style:italic;
 	font-weight:bold;
-	src: url("fonts/Alegreya-BoldItalic.ttf");
+	src: url("/fonts/Alegreya-BoldItalic.ttf");
 }
 
 @font-face {
 	font-family:"alegre-extrabold-italic";
 	font-style:italic;
 	font-weight:800;
-	src: url("fonts/Alegreya-ExtraBoldItalic.ttf");
+	src: url("/fonts/Alegreya-ExtraBoldItalic.ttf");
 }
 
 @font-face {
 	font-family:"alegre-black-italic";
 	font-style:italic;
 	font-weight:bolder;
-	src: url("fonts/Alegreya-BlackItalic.ttf");
+	src: url("/fonts/Alegreya-BlackItalic.ttf");
 }
 
 
