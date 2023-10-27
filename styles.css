@@ -1,3 +1,240 @@
+
+
+body {font-family: "alegre";}
+/* REGLAS CONTENEDORES */
+
+
+.portada-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.portada-bg {
+  opacity: 0.6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.portada-content {
+  position: relative;
+}
+
+
+
+
+.titulo {font-family: "alegre-medium-italic"; font-size: 8vh;}
+
+
+.naranja {color: #B83F19;}
+.boton-naranja {background-color: #B83F19; color:white;}
+.boton-naranja:hover {background-color: #de7e30; color:white;}
+
+.fill { 
+    min-height: 100%;
+    height: 100%;
+}
+
+figcaption {
+  color: grey;
+  font-style: italic;
+  text-align: left;
+}
+
+
+/* REVELADO 1
+
+ .botontransparente {
+    background-color: transparent;
+    border-width: 0px;
+    width: 100%;
+    height: 100%;
+ }
+
+ .foto-fondo {
+    background-image: url(img/foco0.jpg);
+    background-size: cover;
+ }
+
+ .mystyle {
+    background-image: url(img/recorte-filtro.jpg);
+    background-size: cover;
+    mix-blend-mode: darken;
+    z-index: 1;
+  }
+
+
+
+/* REVELADO 2 */
+
+
+ .tapa {
+    background-image: url(img/recorte-filtro.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: opacity 2s;
+    z-index: 1;
+ }
+
+ .fondo {
+    background-image: url(img/foco0.jpg);
+    background-size: cover;
+    background-position: center;
+ }
+
+
+/* ICONO SCROLL MOUSE */
+ .mouse-move {
+  position: absolute;
+  max-width: 70px;
+  bottom: 25px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  animation: mouse-move 1.5s linear infinite;
+}
+
+@keyframes mouse-move {
+  0%,
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+
+  12.5%,
+  37.5% {
+    transform: translateY(3px);
+  }
+
+  25% {
+    transform: translateY(8px);
+  }
+}
+
+
+
+/* SCROLL SNAP */
+
+.scroll {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.seccion {
+  scroll-snap-align: start none;
+  scroll-margin-block: 10px;
+}
+
+
+/* BARRA DE PROGRESO GENERAL */
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+
+  
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background: #B83F19;
+    width: 0%;
+  }
+
+
+
+  .content {
+    padding: 100px 0;
+    margin: 50px auto 0 auto;
+    width: 80%;
+  }
+
+
+
+/* PRUEBA PARA FONDO TEXTURADO */
+
+ .layer1 {
+    background: hsl(40, 35%, 76%);
+}
+
+.layer2 {
+    box-shadow: inset 0 0 40px 10px hsla(0, 0%, 0%, 0.2);
+    background-image: url(https://garden.bradwoods.io/images/noise.webp);
+    background:  
+    	linear-gradient(
+            to bottm right, 
+            hsla(0, 0%, 0%, 0) 40%, 
+            hsla(0, 0%, 0%, 1)
+    	);
+    mix-blend-mode: overlay;
+}
+
+
+
+/* EFECTO DE ALBUM DE FOTOS */
+
+.esquinas {
+  position: relative;  
+  display: table;
+  max-width: 100%;
+  margin: 1em auto;
+}
+.esquinas img {
+  display: table-cell;
+  max-width:100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 8px;
+  background: #fff;
+  box-shadow: 0 0 0.2em #666;
+  box-sizing: border-box;
+}
+.esquinas:before,
+.esquinas:after,
+.esquinasbis:before,
+.esquinasbis:after {
+  position: absolute;
+  bottom: -20px;
+  right: -40px;
+  content: "";
+  height: 40px;
+  width: 80px;
+  background: #fff; /* Same color that wrapper background */
+  box-shadow: 0 -6px 9px -8px #333;
+  transform: rotate(-45deg);
+}
+.esquinas:after,
+.esquinasbis:after {
+  top: -20px;
+  left: -40px;
+  box-shadow: 0 6px 9px -8px #333;
+}
+.esquinasbis:before { 
+  top: auto;
+  left: -40px;
+  transform: rotate(45deg);
+}
+.esquinasbis:after {
+  left: auto;
+  right: -40px;
+  transform: rotate(45deg);
+}
+
+.caption-esquinas{
+  margin-left: inherit;
+}
+
+
 /* FUENTES */
 
 @font-face {
@@ -84,175 +321,4 @@
 	font-weight:bolder;
 	src: url("/fonts/Alegreya-BlackItalic.ttf");
 }
-
-
-/* 
-.pixel {font-family: 'Pixelify Sans', cursive;}
-a {color: white; opacity: 70%;}
-a:hover {color: lightblue; opacity: 100%;}
- */
-
-.titulo {font-family: "alegre-medium-italic"; font-size: 8vh;}
-
-body {font-family: "alegre";}
-
-
-.naranja {color: #B83F19;}
-.boton-naranja {background-color: #B83F19; color:white;}
-.boton-naranja:hover {background-color: #de7e30; color:white;}
-
-/* REVELADO 1
-
- .botontransparente {
-    background-color: transparent;
-    border-width: 0px;
-    width: 100%;
-    height: 100%;
- }
-
- .foto-fondo {
-    background-image: url(img/foco0.jpg);
-    background-size: cover;
- }
-
- .mystyle {
-    background-image: url(img/recorte-filtro.jpg);
-    background-size: cover;
-    mix-blend-mode: darken;
-    z-index: 1;
-  }
-
-
-
-/* REVELADO 2 */
-
-
- .tapa {
-    background-image: url(img/recorte-filtro.jpg);
-    background-size: cover;
-    background-position: center;
-    transition: opacity 2s;
-    z-index: 1;
- }
-
- .fondo {
-    background-image: url(img/foco0.jpg);
-    background-size: cover;
-    background-position: center;
- }
-
-
-
-/* SCROLL SNAP */
-
-
- div {
-  scroll-margin-block: 10px;
-}
-
-
-/* BARRA DE PROGRESO GENERAL */
-
-.header {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    background-color: #f1f1f1;
-  }
-
-  
-  .progress-container {
-    width: 100%;
-    height: 8px;
-    background: #ccc;
-  }
-  
-  .progress-bar {
-    height: 8px;
-    background: #B83F19;
-    width: 0%;
-  }
-
-
-
-  .content {
-    padding: 100px 0;
-    margin: 50px auto 0 auto;
-    width: 80%;
-  }
-
-
-
-/* PRUEBA PARA FONDO TEXTURADO */
-
- .layer1 {
-    background: hsl(40, 35%, 76%);
-}
-
-.layer2 {
-    box-shadow: inset 0 0 40px 10px hsla(0, 0%, 0%, 0.2);
-    background-image: url(https://garden.bradwoods.io/images/noise.webp);
-    background:  
-    	linear-gradient(
-            to bottm right, 
-            hsla(0, 0%, 0%, 0) 40%, 
-            hsla(0, 0%, 0%, 1)
-    	);
-    mix-blend-mode: overlay;
-}
-
-
-
-/* EFECTO DE ALBUM DE FOTOS */
-
-.esquinas {
-  position: relative;  
-  display: table;
-  max-width: 90%;
-  margin: 50px auto;
-}
-.esquinas img {
-  display: table-cell;
-  max-width:100%;
-  height: auto;
-  margin: 0 auto;
-  padding: 8px;
-  background: #fff;
-  box-shadow: 0 0 0.2em #666;
-  box-sizing: border-box;
-}
-.esquinas:before,
-.esquinas:after,
-.esquinasbis:before,
-.esquinasbis:after {
-  position: absolute;
-  bottom: -20px;
-  right: -40px;
-  content: "";
-  height: 40px;
-  width: 80px;
-  background: #fff; /* Same color that wrapper background */
-  box-shadow: 0 -6px 9px -8px #333;
-  transform: rotate(-45deg);
-}
-.esquinas:after,
-.esquinasbis:after {
-  top: -20px;
-  left: -40px;
-  box-shadow: 0 6px 9px -8px #333;
-}
-.esquinasbis:before { 
-  top: auto;
-  left: -40px;
-  transform: rotate(45deg);
-}
-.esquinasbis:after {
-  left: auto;
-  right: -40px;
-  transform: rotate(45deg);
-}
-
-
-/* MODAL */
 
