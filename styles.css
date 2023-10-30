@@ -110,7 +110,11 @@ body {font-family: "alegre";}
   position: relative;
 }
 
-
+nav.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
 
 .fill { 
     min-height: 100%;
@@ -152,8 +156,8 @@ body {font-family: "alegre";}
   width: 40px;
   height: 32px;
   position: absolute;
-  top: -7px;
-  left: -5px;
+  top: 0px;
+  left: 0px;
   
   cursor: pointer;
   
