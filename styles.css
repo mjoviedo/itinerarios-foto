@@ -110,7 +110,7 @@ body {font-family: "alegre";}
   position: relative;
 }
 
-nav.sticky {
+div.sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -126,7 +126,7 @@ nav.sticky {
 #menuToggle
 {
   display: block;
-  position: relative;
+  position: absolute;
   top: 50px;
   left: 50px;
   
@@ -139,14 +139,14 @@ nav.sticky {
 #menuToggle a
 {
   text-decoration: none;
-  color: #232323;
+  color: #B83F19;
   
   transition: color 0.3s ease;
 }
 
 #menuToggle a:hover
 {
-  color: tomato;
+  color: #232323;
 }
 
 
@@ -178,7 +178,7 @@ nav.sticky {
   margin-bottom: 5px;
   position: relative;
   
-  background: #cdcdcd;
+  background: #787878;
   border-radius: 3px;
   
   z-index: 1;
@@ -208,7 +208,7 @@ nav.sticky {
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: #787878;
 }
 
 /*
@@ -236,9 +236,9 @@ nav.sticky {
 {
   position: absolute;
   width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 100px;
+  margin: -50px 0 0 -50px;
+  padding: 30px;
+  padding-top: 80px;
   
   background: #ededed;
   list-style-type: none;
@@ -253,8 +253,8 @@ nav.sticky {
 
 #menu li
 {
-  padding: 10px 0;
-  font-size: 22px;
+  padding: 7px 2px;
+  font-size: 1em;
 }
 
 /*
