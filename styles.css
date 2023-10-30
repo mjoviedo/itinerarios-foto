@@ -236,9 +236,9 @@ nav.sticky {
 {
   position: absolute;
   width: 300px;
-  margin: -100px 0 0 -50px;
+  margin: -50px 0 0 -50px;
   padding: 50px;
-  padding-top: 125px;
+  padding-top: 100px;
   
   background: #ededed;
   list-style-type: none;
