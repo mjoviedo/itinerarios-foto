@@ -10,40 +10,26 @@
 
 <body>
 
-<div style="position: absolute;">
-  <nav role="navigation">
-    <div id="menuToggle">
-      <!--
-      A fake / hidden checkbox is used as click reciever,
-      so you can use the :checked selector on it.
-      -->
-      <input type="checkbox" />
-      
-      <!--
-      Some spans to act as a hamburger.
-      
-      They are acting like a real hamburger,
-      not that McDonalds stuff.
-      -->
-      <span></span>
-      <span></span>
-      <span></span>
-      
-      <!--
-      Too bad the menu has to be inside of the button
-      but hey, it's pure CSS magic.
-      -->
-      <ul id="menu">
-        <a href="#"><li>Home</li></a>
-        <a href="#"><li>About</li></a>
-        <a href="#"><li>Info</li></a>
-        <a href="#ensayo1"><li>Ensayo1</li></a>
-        <a href="#creditos" target=""><li>Créditos</li></a>
-      </ul>
-    </div>
-  </nav>
+
+<!-- Use any element to open the sidenav -->
+  
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Portada</a>
+    <a href="#">Album 1</a>
+    <a href="#">Album 2</a>
+    <a href="#">Album 3</a>
+    <a href="#">Créditos</a>
+  </div>
+
+<div style="position: fixed; top: 0; z-index: 1; width: 100%; padding: 0px;">
+  <span onclick="openNav()">MENÚ</span>
 </div>
 
+  
+<!-- INICIA CONTENIDO CENTRAL -->
+
+<div id="main" class="container-fluid">
 
 <!-- PROGRESS BAR -->
 
@@ -186,7 +172,7 @@
 
 
 <!-- CRÉDITOS -->
-<div id="creditos" class="jumbotron d-flex min-vh-100 p-4 align-items-center bg-naranja">
+<div id="" class="jumbotron d-flex min-vh-100 p-4 align-items-center bg-naranja">
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col-10">

@@ -1,11 +1,18 @@
+// MENÚ LATERAL
 
-// REVELADO 1
+/* Setea el ancho de la navegación lateral a 250px y el margen izquierdo de la página a 250px y agrega un fondo al body */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
 
-function myFunction() {
-    var element = document.getElementById("myDIV");
-    element.classList.remove("mystyle");
-  } 
-
+/* retira lo anterior */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  document.body.style.backgroundColor = "white";
+}
 
 
 // REVELADO 2
