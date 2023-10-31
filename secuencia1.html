@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link href="styles.css" rel="stylesheet">
+  <script src="scripts.js"></script> 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+
+
+
+
+<!-- PROGRESS BAR -->
+
+<nav style="position: fixed; top: 0; z-index: 1; width: 100%; padding: 0px;" class="navbar bg-body-tertiary">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+</nav>
+
+
+<!-- MENÚ DESPLEGABLE -->
+<div class="sticky">
+<nav role="navigation">
+  <div id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+      <a href="index.html" target=""><li>Inicio</li></a>
+      <a href="#miniatuas" target=""><li>Miniaturas</li></a>
+      <a href="#ensayo" target=""><li>Ensayo</li></a>
+      <a href="index.html#creditos" target=""><li>Créditos</li></a>
+    </ul>
+  </div>
+</nav> <!-- Créditos: https://codepen.io/erikterwan/pen/EVzeRP-->
+</div>
+
+<!-- RECORTE -->
+
+<div id="secuencia1" class="jumbotron d-flex align-items-center min-vh-100">
+  <div class="container-fluid text-center fondo1">
+    <div id="tapa1" class="row justify-content-center tapa1">
+      <div class="col">
+        <button class="botontransparente min-vh-100" type="button" onclick = "FadeOut()">
+        </button>
+        <img class="mouse-move" src="img/mouse.png" alt="" />
+      </div>
+    </div>
+  </div> 
+</div> 
+
+<!-- GALERIA MINIATURAS -->
+
+<div id="miniaturas" class="jumbotron d-flex align-items-center min-vh-100" style="background-image: url(img/.jpg); background-size: cover; background-position: center;">
+  <div class="container-lg">
+    <div class="row seccion">
+      <div class="col px-4">
+        <h1>Arquitectura:</h1>
+        <h2>Espacio y usos</h2>
+      </div>
+    </div>
+  </div>
+</div>  
+
+
+<!-- FRASE -->
+<div id="" class="jumbotron d-flex align-items-center min-vh-100 p-2 bg-grisclaro">
+  <div class="container-fluid" >
+    <div class="row">
+      <div class="col-sm-6" style="margin: auto;">
+        <p class="lead" style="text-align: left; color: grey; line-height: 1.5em;"> “No existe una sola manera de acercarnos a la cosa recordada. [...]. Numerosos puntos de vista o estímulos convergen y conducen hasta ella. De forma parecida, las palabras, las comparaciones y los signos han de generar un contexto para la fotografía; es decir, han de señalar y dejar abiertos diferentes accesos a la cosa. Se ha de construir un sistema radial en torno a la fotografía, de modo que esta puede ser vista en unos términos que son simultáneamente personales, políticos, económicos, dramáticos, cotidianos e históricos.”</p> 
+        <p class="lead naranja" style="text-align: right; font-family: alegre-extrabold;">- John Berger</p> 
+      </div>
+      <div class="row align-items-end">
+        <div class="col-sm-6 gris" style="margin: auto; padding-top: 2em;">
+          <p style="text-align: right;">Fuente: Berger, J. (2016). <i>Para entender la fotografía</i>. Barcelona: Gustavo Gili. p.80</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+<!-- FOTO ACTUAL -->
+<div id="" class="jumbotron d-flex align-items-center min-vh-100 p-4">
+<div class="container-fluid" >
+  <div class="row">
+    <div class="col-sm-9" style="margin: auto;">
+      <figure>
+      <img src="img/5.jpg" alt="" style="width: 100%;">
+      <figcaption style="margin-top: 1em;">Escuela Domingo lo que sea</figcaption>
+    </figure>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- FOTO ANGITUA -->
+<div id="" class="jumbotron d-flex align-items-center min-vh-100 p-2">
+  <div class="container-fluid" >
+    <div class="row justify-content-center">
+      <div class="col-sm-7" style="margin: auto;">
+        <figure>
+        <div class="esquinas">
+          
+          <img src="img/5.jpg" alt="" style="width: 100%;">
+        </div>
+        <div style="margin: auto;">
+        <figcaption class="caption-esquinas">Escuela Domingo lo que sea</figcaption>
+        </div>
+      </figure>
+      </div>
+    </div>
+  </div>
+  </div>
+
+<!-- ENSAYO -->
+<div id="ensayo" class="jumbotron d-flex min-vh-100 p-4 align-items-center bg-beige">
+  <div class="container-fluid " >
+    <div class="row justify-content-center">
+      <div class="col-sm-2 text-center">
+       <img src="img/6.jpg" class="img-fluid" alt="" style="width:200px">
+      </div>
+      <div class="col-sm-6">
+       <h2 class="naranja" style="font-family: alegre-semibold;">Ensayo sobre tal cosa</h2>
+       <p class="gris">Por Ignacio Barcoso</p>
+
+       <p>Esta ponencia intenta explicar cómo las Ciencias Humanas y, en especial consideración,
+        la enseñanza de la Lengua y de la Cultura Latina deben complementar su enseñanza
+        clásica con métodos y didácticas contemporáneas que respondan a la realidad de nues-
+        tros y nuestras estudiantes. Esta realidad de la cual hablam</p>
+       <a class="naranja" data-bs-toggle="modal" data-bs-target="#ensayo1" href="">Seguir leyendo</a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+<!-- MODAL ENSAYO 1 -->
+<div class="modal fade" id="ensayo1" tabindex="-1" aria-labelledby="Ensayo 1" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Texto largo en modal</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="texto.html" style="border:1px #eee solid;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="99%" width="100%%" allowfullscreen></iframe>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!--BARRA DE PROGRESO INFERIOR 
+
+  <div class="progress-container2 header">
+  <div class="progress-bar2" id="myBar2"></div>
+</div>
+
+-->
+
+</div>  <!--termina contenido central-->
+
+<script src="scripts.js"></script> 
+</body>
+</html>
