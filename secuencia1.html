@@ -4,7 +4,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <link href="styles.css" rel="stylesheet">
-  <link href="galeria.scss" rel="stylesheet">
+  <link href="galeria.scss" rel="stylesheet/scss" type="text/css">
   <script src="scripts.js"></script> 
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -67,31 +67,32 @@
         <h2>Espacio y usos</h2>
       </div>
     </div>
-    <div class="row">
-
-    </div>
+    <div class="d-flex flex-row flex-wrap justify-content-center">
+      <div class="d-flex flex-column gal">
+          <img src="https://images.unsplash.com/photo-1485963631004-f2f00b1d6606?auto=format&fit=crop&w=668&q=80" class="img-fluid">
+          
+          <img src="https://images.unsplash.com/photo-1502865787650-3f8318917153?auto=format&fit=crop&w=334&q=80" class="img-fluid">
+      </div>
+      
+      <div class="d-flex flex-column gal">
+          <img src="https://images.unsplash.com/photo-1500816558239-6b91f4256ead?auto=format&fit=crop&w=331&q=80" class="img-fluid">
+          
+          <img src="https://images.unsplash.com/photo-1487376318617-f43c7b41e2e2?auto=format&fit=crop&w=750&q=80" class="img-fluid scale">
+      </div>
+      
+      <div class="d-flex flex-column gal">
+          <img src="https://images.unsplash.com/photo-1497888329096-51c27beff665?auto=format&fit=crop&w=751&q=80" class="img-fluid scale mb-2">
+          <img src="https://images.unsplash.com/photo-1505253468034-514d2507d914?auto=format&fit=crop&w=334&q=80"  class="img-fluid">
+      </div>
+      
+      <div class="d-flex flex-column gal">
+          <img src="https://images.unsplash.com/photo-1502550900787-e956c314a221?auto=format&fit=crop&w=334&q=80" class="img-fluid m-1 p-1">
+            <img src="https://images.unsplash.com/photo-1455853659719-4b521eebc76d?auto=format&fit=crop&w=750&q=80" class="img-fluid image m-1 p-1">
+      </div>
+  </div>
   </div>
 </div>  
-<div id="carrousel">
-  <div class="container">
-      <div class="col-md-12">
-          <div class="owl-carousel owl-theme">
-            <img src="https://picsum.photos/300/300/?random&1">
-            <img src="https://picsum.photos/300/300/?random&2">
-            <img src="https://picsum.photos/300/300/?random&3">
-            <img src="https://picsum.photos/300/300/?random&4">
-            <img src="https://picsum.photos/300/300/?random&5">
-            <img src="https://picsum.photos/300/300/?random&6">
-            <img src="https://picsum.photos/300/300/?rando&7">
-            <img src="https://picsum.photos/300/300/?random&8">
-          </div>
-      </div>
-    <div class="text-center">
-      <button id="play-carousel" type="button" class="btn btn-dark">Play</button>
-      <div class="status"></div>
-    </div>
-  </div>
-</div>
+
 
 <!-- FRASE -->
 <div id="" class="jumbotron d-flex align-items-center min-vh-100 p-2 bg-grisclaro">

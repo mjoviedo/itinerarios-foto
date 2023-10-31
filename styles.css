@@ -491,3 +491,18 @@ figcaption {color: grey; font-style: italic; text-align: left;}
 }
 
 
+/* GALERIA DE FOTOS */
+
+
+.flex-column {
+  max-width: 260px;
+}
+
+.gal img {
+  margin: 5px;
+}
+
+.scale {
+  transform: scaleY(1.05);
+  padding-top: 5px; 
+}
