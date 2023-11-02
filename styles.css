@@ -131,6 +131,7 @@ div.sticky {
 
 .miniatura { 
   opacity: 60%;
+  margin: 0.3em;
 }
 
 .miniatura:hover { 
