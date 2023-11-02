@@ -123,6 +123,8 @@ div.sticky {
     height: 100%;
 }
 
+/* GALERIA DE FOTOS Y THUMBNAILS */
+
 .foto { 
   width: 100%;
 }
@@ -136,17 +138,26 @@ div.sticky {
 }
 
 
-.boton-miniaturas {
-  display: block;
-  position: absolute;
-  top: 60px;
-  left: 60px;
-  
-  z-index: 1;
-  
-  -webkit-user-select: none;
-  user-select: none;
+/* BOTONES FIJOS */
+
+#botongrilla {
+    position: fixed;
+    z-index: 1;
+    bottom: 30px;
+    right: 30px;
+    opacity: 0.6;
 }
+
+#botongrilla img {
+height: 2.5em;
+}
+
+/* ELEMENTOS MODAL */
+
+.modal-title {
+  color: #4e5c5a;
+  }
+
 
 /* MENU LATERAL HAMBURGUESA */
 
@@ -205,8 +216,9 @@ div.sticky {
   margin-bottom: 5px;
   position: relative;
   
-  background: #787878;
+  background: #4e5c5a;
   border-radius: 3px;
+  opacity: 0.6;
   
   z-index: 1;
   
