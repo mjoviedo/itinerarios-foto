@@ -18,10 +18,10 @@
 
 <!-- PROGRESS BAR -->
 
-<nav style="position: fixed; top: 0; z-index: 1; width: 100%; padding: 0px;" class="navbar bg-body-tertiary">
-    <div class="progress-container">
-      <div class="progress-bar" id="myBar"></div>
-    </div>
+<nav style="position: fixed; bottom: 0; z-index: 1; width: 100%; padding: 0px;" class="navbar bg-body-tertiary">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
 </nav>
 
 
@@ -69,10 +69,9 @@
 <div id="miniaturas" class="jumbotron d-flex align-items-center min-vh-100 bg-arena2">
   <div class="container-lg"> 
     <div class="row my-3">
-     <div class="col px-4 text-center arena4">
-        <h1>Arquitectura:</h1>
-        <h2>Espacio y usos</h2>
-      </div>
+     <div class="col px-4 arena4">
+        <h2 style="text-align: center;">Arquitectura escolar: espacio y usos</h2>
+              </div>
     </div>
     <div class="row">
       <div class="d-flex flex-wrap align-content-around justify-content-center">
@@ -105,6 +104,17 @@
         <a href="#foto28"><img class="miniatura" src="img/fotos/thumbs/28.jpg" alt=""></a>
       </div>
     </div>
+    <div class="row my-3">
+      <div class="col px-4 text-left arena4">
+        <p style="text-align: right;">“… La escuela es ella misma un verbo, una acción, y no simplemente <br/> el lugar vacío de una estructura protocolizada por normativas de ejecución.”
+        </p>
+        <p style="text-align: right;" class="small">Luis Manuel Flores González<br/><i>Construir y habitar la escuela</i> <a class="verdeagua" href="#cita"><sup>1</sup></a>
+        </p>
+
+         <p id="cita" style="opacity: 0.8;" class="small">Flores González, L. M. (2023). Presentación. En Mondragón, H y Marini, G. (eds.). <i>Construir y habitar la escuela</i>. Santiago de Chile: Universidad Católica de Chile. 
+         </p>
+       </div>
+     </div>
   </div>
 </div>  
 
@@ -551,17 +561,12 @@
   <div class="container-fluid " >
     <div class="row justify-content-center">
       <div class="col-sm-2 text-center">
-       <img src="img/6.jpg" class="img-fluid" alt="" style="width:200px">
+       <img src="img/a_suarez.png" class="img-fluid" alt="" style="width:150px; opacity: 0.8;">
       </div>
       <div class="col-sm-6">
-       <h2 class="naranja" style="font-family: alegre-semibold;">Ensayo sobre tal cosa</h2>
-       <p class="gris">Por Ignacio Barcoso</p>
-
-       <p>Esta ponencia intenta explicar cómo las Ciencias Humanas y, en especial consideración,
-        la enseñanza de la Lengua y de la Cultura Latina deben complementar su enseñanza
-        clásica con métodos y didácticas contemporáneas que respondan a la realidad de nues-
-        tros y nuestras estudiantes. Esta realidad de la cual hablam</p>
-       <a class="naranja" data-bs-toggle="modal" data-bs-target="#ensayo1" href="">Seguir leyendo</a>
+        <a class="naranja" href="ensayo1.html"><h2 class="naranja" style="font-family: alegre-semibold;">La mirada normalizada. Usos y resguardos de la imagen fotográfica como documento histórico</h2></a>
+       <p class="gris">por Hugo Nicolás Suárez</p>
+       <a class="naranja" href="ensayo1.html">Leer ensayo</a> <!-- data-bs-toggle="modal" data-bs-target="#ensayo1"-->
       </div>
     </div>
   </div>
@@ -572,12 +577,14 @@
 <div class="modal fade" id="ensayo1" tabindex="-1" aria-labelledby="Ensayo 1" aria-hidden="true">
   <div class="modal-dialog modal-fullscreen">
     <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Texto largo en modal</h1>
+      <!-- <div class="modal-header">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-      </div>
+      </div> -->
       <div class="modal-body">
-        <iframe src="texto.html" style="border:1px #eee solid;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="99%" width="100%%" allowfullscreen></iframe>
+        <div>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+        <iframe src="ensayo1.html" style="border:1px #eee solid;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="90%" width="100%%" allowfullscreen></iframe>
       </div>
       <!-- <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
