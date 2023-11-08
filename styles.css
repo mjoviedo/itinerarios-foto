@@ -429,8 +429,10 @@ height: 2.5em;
 /* ESTILOS TEXTO */
 
 .piedefoto {color: grey; font-style: italic; text-align: center;}
+
 .titulo {font-family: "alegre-medium"; font-size: 2.5em;}
-p {font-size: 1.1em;}
+
+p, li {font-size: 1.1em;}
 
 .parallax {
   background-attachment: fixed;
@@ -438,7 +440,6 @@ p {font-size: 1.1em;}
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 
 /* EFECTO REVELADO */
