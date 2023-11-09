@@ -113,9 +113,10 @@ body {font-family: "alegre";}
 }
 
 div.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 20px;
 }
 
 
@@ -154,6 +155,20 @@ div.sticky {
 #botongrilla img {
 height: 2.5em;
 }
+
+#logoisep {
+  position: fixed;
+  z-index: 1;
+  top: 30px;
+  right: 30px;
+  opacity: 0.7;
+  
+}
+
+#logoisep img {
+height: 3.5em;
+}
+
 
 /* ELEMENTOS MODAL */
 
@@ -219,9 +234,10 @@ height: 2.5em;
   margin-bottom: 5px;
   position: relative;
   
-  background: #4e5c5a;
+  background: #fff;
+  box-shadow: 1px 1px 2px #2d2d2d;
   border-radius: 3px;
-  opacity: 0.6;
+  opacity: 0.8;
   
   z-index: 1;
   
@@ -557,7 +573,7 @@ p, li {font-size: 1.1em;}
   margin: 0 auto;
   padding: 8px;
   background: #fff;
-  box-shadow: 0 0 0.2em #666;
+  box-shadow: 0 0 0.2em #00000055;
   box-sizing: border-box;
 }
 .esquinas:before,
