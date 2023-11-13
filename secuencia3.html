@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link href="styles.css" rel="stylesheet">
+  <link href="galeria.scss" rel="stylesheet/scss" type="text/css">
+  <script src="scripts.js"></script> 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+
+
+
+
+<!-- PROGRESS BAR -->
+
+<nav style="position: fixed; bottom: 0; z-index: 1; width: 100%; padding: 0px;" class="navbar bg-body-tertiary">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+</nav>
+
+<!-- MOSCA ISEP -->
+
+<a href="https://isep-cba.edu.ar/" target="_blank" id="logoisep"><img src="img/logos/logo-mosca2.png" alt=""></a>
+
+
+
+<!-- MENÚ DESPLEGABLE -->
+<div class="sticky">
+  <nav role="navigation">
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
+        <a href="index.html#portada" target=""><li>Inicio</li></a>
+        <a href="index.html#presentacion" target=""><li>Presentación</li></a>
+        <a href="index.html#albumes" target=""><li>Registros fotográficos</li></a>
+        <a href="ensayo1.html" target=""><li>Ensayo: La mirada normalizada</li></a>
+        <a href="index.html#fotografo" target=""><li>El fotógrafo</li></a>
+        <a href="index.html#creditos" target=""><li>Créditos</li></a>
+      </ul>
+    </div>
+  </nav> <!-- Créditos: https://codepen.io/erikterwan/pen/EVzeRP-->
+  </div>
+
+<!-- BOTON GRILLA MINIATURAS-->
+
+
+  <a href="#miniaturas" id="botongrilla"><img src="img/grid-arena2.svg" alt=""></a>
+
+
+<!-- RECORTE -->
+
+<div id="secuencia1" class="jumbotron d-flex align-items-center min-vh-100">
+  <div class="container-fluid text-center fondo3">
+    <div id="tapa3" class="row justify-content-center tapa3">
+      <div class="col">
+        <button class="botontransparente min-vh-100" type="button" onclick = "FadeOut3()">
+        </button>
+        <img class="mouse-move arena4" src="img/clic-arena.svg" alt="" style="height: 2.5em; opacity: 0.5;"/>
+      </div>
+    </div>
+  </div> 
+</div> 
+
+
+
+
+<!-- FRASE -->
+<div id="" class="jumbotron d-flex align-items-center min-vh-100 p-2 bg-arena4" style="background-image: url(img/fondo-citas.jpg); background-size: cover; background-position: center;">
+  <div class="container-fluid" >
+    <div class="row">
+      <div class="col-sm-6" style="margin: auto;">
+        <p class="lead" style="text-align: left; color: grey; line-height: 1.5em;"> “La fotografía de hoy es también, al momento en que la miramos, testimonio de un pasado, de algo ya acabado. Pero, en este algo ya acabado, está lo que fue y, quizás, lo que aún estará en movimiento, un futuro que vendrá”.
+        </p> 
+        <p class="lead naranja" style="text-align: right; font-family: alegre-extrabold;">- Arlette Farge</p> 
+      </div>
+    
+    </div>
+  </div>
+  </div>
+
+
+<!-- GALERIA MINIATURAS -->
+
+<div id="miniaturas" class="jumbotron d-flex align-items-center min-vh-100 bg-arena2">
+  <div class="container-lg"> 
+    <div class="row my-3">
+     <div class="col px-4 arena4">
+        <h2 style="text-align: center;">Arquitectura escolar: el entorno natural</h2>
+              </div>
+    </div>
+    <div class="row">
+      <div class="d-flex flex-wrap align-content-around justify-content-center">
+        <a href="#foto44"><img class="miniatura" src="img/fotos/thumbs/44.jpg" alt=""></a>
+        <a href="#foto45"><img class="miniatura" src="img/fotos/thumbs/45.jpg" alt=""></a>
+        <a href="#foto46"><img class="miniatura" src="img/fotos/thumbs/46.jpg" alt=""></a>
+        <a href="#foto47"><img class="miniatura" src="img/fotos/thumbs/47.jpg" alt=""></a>
+        <a href="#foto48"><img class="miniatura" src="img/fotos/thumbs/48.jpg" alt=""></a>
+        
+      </div>
+    </div>
+    <div class="row my-3">
+      <div class="col px-4 text-left arena4">
+        <p style="text-align: right;">“… La escuela es ella misma un verbo, una acción, y no simplemente <br/> el lugar vacío de una estructura protocolizada por normativas de ejecución.”
+        </p>
+        <p style="text-align: right;" class="small">Luis Manuel Flores González<br/><i>Construir y habitar la escuela</i>
+        </p>
+         </p>
+       </div>
+     </div>
+  </div>
+</div>  
+
+<!-- ESPACIADOR 10% DE PANTALLA VERTICAL -->
+
+<div id="" class="jumbotron d-flex p-4 align-items-center" style="min-height: 10vh;">
+  <div class="container-fluid " >
+    <div class="row justify-content-center">
+      <div class="col-sm-6">
+     </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- FOTO 44 -->
+<div id="foto44" class="jumbotron d-flex align-items-center min-vh-100 p-4">
+  <div class="container-fluid" >
+    <div class="row">
+      <div class="col-sm-9 justify-content-center" style="margin: auto;">
+        <img class="foto" src="img/fotos/44.jpg" alt="">
+        <p class="piedefoto" style="margin-top: 1em;">
+          44 Escuela Normal Superior “Dr. Alejandro Carbó”. Córdoba. Entorno natural del lateral del edificio. Octubre de 2023.
+
+          <br/>
+
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOTO 45 -->
+<div id="foto45" class="jumbotron d-flex align-items-center min-vh-100 p-4">
+  <div class="container-fluid" >
+    <div class="row">
+      <div class="col-sm-9 justify-content-center" style="margin: auto;">
+        <img class="foto" src="img/fotos/45.jpg" alt="">
+        <p class="piedefoto" style="margin-top: 1em;">
+          45 Escuela Normal Superior “Dr. Alejandro Carbó”. Córdoba. Entorno natural y detalles arquitectónicos del lateral del edificio. Octubre de 2023.
+
+          <br/>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOTO 46 -->
+<div id="foto46" class="jumbotron d-flex align-items-center min-vh-100 p-4">
+  <div class="container-fluid" >
+    <div class="row">
+      <div class="col-sm-9 justify-content-center" style="margin: auto;">
+        <img class="foto" src="img/fotos/46.jpg" alt="">
+        <p class="piedefoto" style="margin-top: 1em;">
+          46 Escuela Normal Superior “Dr. Alejandro Carbó”. Córdoba. Enredaderas sobre las paredes que dan a uno de los patios internos del edificio. Octubre de 2023.
+
+          <br/>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOTO 47 -->
+<div id="foto47" class="jumbotron d-flex align-items-center min-vh-100 p-4">
+  <div class="container-fluid" >
+    <div class="row">
+      <div class="col-sm-9 justify-content-center" style="margin: auto;">
+        <img class="foto" src="img/fotos/47.jpg" alt="">
+        <p class="piedefoto" style="margin-top: 1em;">
+          47 Escuela Normal Superior “Dr. Alejandro Carbó”. Córdoba. Entorno natural de uno de los patios del edificio.
+
+
+          <br/>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOTO 48 -->
+<div id="foto48" class="jumbotron d-flex align-items-center min-vh-100 p-4">
+  <div class="container-fluid" >
+    <div class="row">
+      <div class="col-sm-7" style="margin: auto;">
+        <figure>
+        <div class="esquinas">
+          <img src="img/fotos/48.jpg" alt="" style="width: 100%;">
+        </div>
+        <div style="margin: auto;">
+        <p class="piedefoto"></p>
+        </div>
+      </figure>
+      </div>
+    </div>
+  </div>
+</div>    
+
+<!-- ENSAYO 3
+<div id="ensayo" class="jumbotron d-flex min-vh-100 p-4 align-items-center bg-arena4 parallax" style="background-image: url(img/fondo-claro.jpg); background-size: cover; background-position: center;">
+  <div class="container-fluid " >
+    <div class="row justify-content-center">
+      <div class="col-sm-2 text-center">
+       <img src="img/a_suarez.png" class="img-fluid" alt="" style="width:150px; opacity: 0.8;">
+      </div>
+      <div class="col-sm-6">
+        <a class="" href="ensayo3.html" style="text-decoration: none;"><h2 class="bordo" style="font-family: alegre-semibold;">La mirada normalizada. Usos y resguardos de la imagen fotográfica como documento histórico</h2></a>
+       <p class="gris">por Hugo Nicolás Suárez</p>
+       <a class="naranja" href="ensayo3.html">Leer ensayo</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+-->
+
+</div>  <!--termina contenido central-->
+
+<script src="scripts.js"></script> 
+</body>
+</html>

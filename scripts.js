@@ -23,6 +23,18 @@ function closeNav() {
     tapa.style.opacity = '0';
  }
 
+ function FadeOut2() {
+  const tapa = document.getElementById('tapa2');
+
+  tapa2.style.opacity = '0';
+}
+
+function FadeOut3() {
+  const tapa = document.getElementById('tapa3');
+
+  tapa3.style.opacity = '0';
+}
+
 
  // BARRA DE PROGRESO DE LECTURA
 
