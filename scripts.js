@@ -13,11 +13,6 @@ function closeNav() {
 }
 
 
-//onclick code
-$('img.expand').toggleClass('collapse');
-
-
-
 // REVELADO 2
 
   function FadeOut() {
