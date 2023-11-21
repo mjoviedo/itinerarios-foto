@@ -3,16 +3,19 @@
 // Setea el ancho de la navegación lateral a 250px y el margen izquierdo de la página a 250px y agrega un fondo al body
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  document.getElementById("main").style.marginRight = "250px";
 }
 
 // retira lo anterior
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
-  document.body.style.backgroundColor = "white";
+  document.getElementById("main").style.marginRight = "0";
 }
+
+
+//onclick code
+$('img.expand').toggleClass('collapse');
+
 
 
 // REVELADO 2
