@@ -461,6 +461,8 @@ p, li {font-size: 1.1em;}
   background-size: cover;
 }
 
+.card-img-top {opacity:0.85;}
+.card-img-top:hover {opacity:1;}
 
 /* EFECTO REVELADO */
 
