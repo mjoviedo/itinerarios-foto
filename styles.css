@@ -473,6 +473,12 @@ p, li {font-size: 1.1em;}
 
   }
 
+  25% {
+    filter: brightness(0);
+    background-color: black;
+
+  }
+
   100% {
     filter: brightness(1);
     background-color: black;
