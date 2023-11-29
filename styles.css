@@ -466,6 +466,16 @@ p, li {font-size: 1.1em;}
 
 /* EFECTO REVELADO */
 
+@keyframes fadein { 
+  0% {
+    filter: brightness(0);
+  }
+
+  100% {
+    filter: brightness(1);
+  }
+}
+
 .botontransparente {
     background-color: transparent;
     border-width: 0px;
@@ -485,6 +495,8 @@ p, li {font-size: 1.1em;}
     background-image: url(img/fotos/01.jpg);
     background-size: cover;
     background-position: center;
+    animation: fadein 3s;
+
  }
 
 
@@ -500,6 +512,8 @@ p, li {font-size: 1.1em;}
   background-image: url(img/fotos/29.jpg);
   background-size: cover;
   background-position: center;
+  animation: fadein 3s;
+
 }
 
 .tapa3 {
@@ -514,6 +528,8 @@ p, li {font-size: 1.1em;}
   background-image: url(img/fotos/42.jpg);
   background-size: cover;
   background-position: center;
+  animation: fadein 3s;
+
 }
 
 
