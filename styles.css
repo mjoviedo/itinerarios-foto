@@ -469,10 +469,14 @@ p, li {font-size: 1.1em;}
 @keyframes fadein { 
   0% {
     filter: brightness(0);
+    background-color: black;
+
   }
 
   100% {
     filter: brightness(1);
+    background-color: black;
+
   }
 }
 
