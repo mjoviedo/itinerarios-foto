@@ -135,6 +135,7 @@ div.sticky {
 .miniatura { 
   opacity: 60%;
   margin: 0.3em;
+  height: 8em;
 }
 
 .miniatura:hover { 
@@ -160,7 +161,7 @@ height: 2.5em;
   position: fixed;
   z-index: 1;
   top: 30px;
-  right: 30px;
+  left: 30px;
   opacity: 0.7;
   
 }
@@ -333,8 +334,8 @@ height: 3.5em;
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #111; /* Black*/
+  right: 0;
+  background-color: #4e5c5a; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -342,23 +343,23 @@ height: 3.5em;
 
 /* ENLACES DEL MENÚ */
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 18px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 1.2em;
+  color: #f1f1f1;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #ee7a54;
 }
 
 /* Posición y estilo del botón cerrar (esquina superior derecha) */
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
+  right: 30px;
   font-size: 36px;
   margin-left: 50px;
 }
@@ -444,7 +445,10 @@ height: 3.5em;
 
 /* ESTILOS TEXTO */
 
-.piedefoto {color: grey; font-style: italic; text-align: center;}
+
+.ensayo a {color:#ee7a54;}
+
+.piedefoto {color: grey; font-style: italic; text-align: center; position:relative; z-index: 3;}
 
 .titulo {font-family: "alegre-medium"; font-size: 2.8em;}
 
@@ -457,8 +461,30 @@ p, li {font-size: 1.1em;}
   background-size: cover;
 }
 
+.card-img-top {opacity:0.85;}
+.card-img-top:hover {opacity:1;}
 
 /* EFECTO REVELADO */
+
+@keyframes fadein { 
+  0% {
+    filter: brightness(0);
+    background-color: black;
+
+  }
+
+  25% {
+    filter: brightness(0);
+    background-color: black;
+
+  }
+
+  100% {
+    filter: brightness(1);
+    background-color: black;
+
+  }
+}
 
 .botontransparente {
     background-color: transparent;
@@ -479,6 +505,8 @@ p, li {font-size: 1.1em;}
     background-image: url(img/fotos/01.jpg);
     background-size: cover;
     background-position: center;
+    animation: fadein 3s;
+
  }
 
 
@@ -494,10 +522,12 @@ p, li {font-size: 1.1em;}
   background-image: url(img/fotos/29.jpg);
   background-size: cover;
   background-position: center;
+  animation: fadein 3s;
+
 }
 
 .tapa3 {
-  background-image: url(img/fotos/43-recortes.jpg);
+  background-image: url(img/fotos/42-recortes.jpg);
   background-size: cover;
   background-position: center;
   transition: opacity 2s;
@@ -505,9 +535,11 @@ p, li {font-size: 1.1em;}
 }
 
 .fondo3 {
-  background-image: url(img/fotos/43.jpg);
+  background-image: url(img/fotos/42.jpg);
   background-size: cover;
   background-position: center;
+  animation: fadein 3s;
+
 }
 
 
